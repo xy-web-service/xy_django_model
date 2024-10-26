@@ -7,7 +7,7 @@ build-backend = "setuptools.build_meta"
 
 name = "xy_django_model"
 
-authors = [{ name = "helios", email = "yuyang.0515@qq.com" }]
+authors = [{ name = "余洋", email = "yuyangit.0515@qq.com" }]
 description = "django 模型基类"
 
 dependencies = ["django"]

@@ -24,6 +24,7 @@ xy-web-service服务设置模块.
 ## 安装
 
 ```bash
+# bash
 pip install xy_django_model
 ```
 

@@ -24,12 +24,14 @@ xy-web-service服務設定模組。
 ## 安裝
 
 ```bash
+# bash
 pip install xy_django_model
 ```
 
 ## 使用
 
 ```bash
+# bash
 xy_django_model -c project -n xy_django_model_demo
 # 创建项目 [ xy_django_model_demo ] 成功!!!
 # 项目路径 ==>>> /mnt/bs-media/Workspace/project/opensource/xy-web-service/xy_django_model/test/xy_django_model_demo
