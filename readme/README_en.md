@@ -109,6 +109,10 @@ class MImage(models.Model):
 
 ##### Run [Sample Project](../samples/xy_web_server_demo)
 
+> After running xy_web_server -w django start
+> Visit http://127.0.0.1:8401/admin/ to verify.（username: root, password: 1)
+> After saving the image, you can find the path where the image exists in the sample project for verification.
+
 > For detailed usage of the sample project, please go to the following repository <b style="color: blue">xy_web_server.git</b> 
 > - <a href="https://github.com/xy-web-service/xy_web_server.git" target="_blank">Github</a>  
 > - <a href="https://gitee.com/xy-web-service/xy_web_server.git" target="_blank">Gitee</a>

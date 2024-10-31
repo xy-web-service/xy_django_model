@@ -109,6 +109,10 @@ class MImage(models.Model):
 
 ##### 运行 [样例工程](../samples/xy_web_server_demo)
 
+> 运行 xy_web_server -w django start 后
+> 访问 http://127.0.0.1:8401/admin/ 进行验证（用户名: root, 密码: 1)
+> 保存图片后可以在样例工程找寻图片存在路径进行验证
+
 > 样例工程具体使用方式请移步 <b style="color: blue">xy_web_server.git</b> 下列仓库
 > - <a href="https://github.com/xy-web-service/xy_web_server.git" target="_blank">Github地址</a>  
 > - <a href="https://gitee.com/xy-web-service/xy_web_server.git" target="_blank">Gitee地址</a>
