@@ -14,7 +14,7 @@
 
 ## 說明
 
-xy-web-service服務設定模組。
+Django模型的一些工具.
 
 ## 程式碼庫
 
@@ -30,18 +30,89 @@ pip install xy_django_model
 
 ## 使用
 
-```bash
-# bash
-xy_django_model -c project -n xy_django_model_demo
-# 创建项目 [ xy_django_model_demo ] 成功!!!
-# 项目路径 ==>>> /mnt/bs-media/Workspace/project/opensource/xy-web-service/xy_django_model/test/xy_django_model_demo
+```python
+# models.py
 
-cd xy_django_model_demo
-xy_django_model
-# >>>>>>>>>>>> xy_django_model - v1.0.1 <<<<<<<<<<<<<
-#
-# Hello World!!!
+
+import uuid
+from django.utils.translation import gettext_lazy as _
+from django.db import models
+
+from xy_django_model.model import gen_upload_to
+
+
+# 图片存储路径为 <MEDIA_ROOT>/Resource/images/<图片文件名>.<图片文件后缀>
+@gen_upload_to
+def images(instance=None, filename=None):
+    pass
+
+
+# 图片存储路径为 <MEDIA_ROOT>/Resource/mini/thumbnail/<图片文件名>.<图片文件后缀>
+# 根据函数命名来设置图片存储路径,将替换函数名中的"__"两行底杠为文件路径的斜杠"/"
+@gen_upload_to
+def mini__thumbnail(instance=None, filename=None):
+    pass
+
+
+class MImage(models.Model):
+    id = models.BigAutoField(primary_key=True)
+    create_at = models.DateTimeField(
+        verbose_name=_("创建时间"),
+        auto_now_add=True,
+        editable=True,
+    )
+    update_at = models.DateTimeField(
+        verbose_name=_("更新时间"),
+        auto_now_add=True,
+        editable=True,
+    )
+    identifier = models.UUIDField(
+        verbose_name=_("唯一标识"),
+        default=uuid.uuid4,
+        editable=True,
+        unique=True,
+        null=True,
+    )
+    is_active = models.BooleanField(
+        verbose_name=_("是否启用"),
+        null=True,
+        blank=True,
+        default=False,
+    )
+    image = models.ImageField(
+        verbose_name=_("图片"),
+        upload_to=images,
+        null=True,
+        blank=True,
+        default=None,
+        help_text=_("图片"),
+    )
+    mini_thumbnail = models.ImageField(
+        verbose_name=_("迷你缩略图"),
+        upload_to=mini__thumbnail,
+        null=True,
+        blank=True,
+        default=None,
+        help_text=_("迷你缩略图"),
+    )
+
+    class Meta:
+        verbose_name = _("图片")
+        verbose_name_plural = _("图片")
+        app_label = "Resource"
+
+    def __str__(self):
+        return f"{self.id}. {self.identifier}"
+
 ```
+
+
+##### 1. 運轉 [範例工程](../samples/xy_web_server_demo)
+
+> 範例工程具體使用方式請移步 <b style="color: blue">xy_web_server.git</b> 下列倉庫
+> - <a href="https://github.com/xy-web-service/xy_web_server.git" target="_blank">Github位址</a>  
+> - <a href="https://gitee.com/xy-web-service/xy_web_server.git" target="_blank">Gitee位址</a>
+
 
 ## 許可證
 xy_django_model 根據 <木蘭寬鬆許可證, 第2版> 獲得許可。有關詳細信息，請參閱 [LICENSE](../LICENSE) 文件。

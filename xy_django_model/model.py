@@ -15,17 +15,22 @@ from django.contrib.contenttypes.models import ContentType
 import os
 from functools import wraps
 
+# Example:
+# def content_file_name(instance, filename):
+#     return "/".join(["content", instance.user.username, filename])
+
+
+# class Content(models.Model):
+#     name = models.CharField(max_length=200)
+#     user = models.ForeignKey(User)
+#     file = models.FileField(upload_to=content_file_name)
+
 
 def default_upload_to(instance, path, filename):
     if path == None:
         path = ""
-    # file will be uploaded to MEDIA_ROOT/user_<id>/<filename>
-    return "{app_label}/{class_name}{path}/{filename}".format(
-        app_label=ContentType.objects.get_for_model(instance).app_label,
-        path=path,
-        class_name=instance.__class__.__name__,
-        filename=filename,
-    )
+    # 文件将要上传到 <app_label>/<模型类名称>/
+    return f"{ContentType.objects.get_for_model(instance).app_label}/{instance.__class__.__name__}{path}/{filename}"
 
 
 def gen_upload_to(func):
