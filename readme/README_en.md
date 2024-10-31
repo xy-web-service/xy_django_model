@@ -107,7 +107,7 @@ class MImage(models.Model):
 ```
 
 
-##### 1. Run [Sample Project](../samples/xy_web_server_demo)
+##### Run [Sample Project](../samples/xy_web_server_demo)
 
 > For detailed usage of the sample project, please go to the following repository <b style="color: blue">xy_web_server.git</b> 
 > - <a href="https://github.com/xy-web-service/xy_web_server.git" target="_blank">Github</a>  

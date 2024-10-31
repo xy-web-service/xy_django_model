@@ -106,7 +106,7 @@ class MImage(models.Model):
 
 ```
 
-##### 1. 运行 [样例工程](./samples/xy_web_server_demo)
+##### 运行 [样例工程](./samples/xy_web_server_demo)
 
 > 样例工程具体使用方式请移步 <b style="color: blue">xy_web_server.git</b> 下列仓库
 > - <a href="https://github.com/xy-web-service/xy_web_server.git" target="_blank">Github地址</a>  
