@@ -19,7 +19,8 @@ Django模型的一些工具.
 ## 程式碼庫
 
 - <a href="https://github.com/xy-web-service/xy_django_model.git" target="_blank">Github位址</a>  
-- <a href="https://gitee.com/xy-web-service/xy_django_model.git" target="_blank">Gitee位址</a>
+- <a href="https://gitee.com/xy-opensource/xy_django_model.git" target="_blank">Gitee位址</a>  
+- <a href="https://gitcode.com/xy-opensource/xy_django_model.git" target="_blank">GitCode位址</a>  
 
 ## 安裝
 
@@ -115,7 +116,8 @@ class MImage(models.Model):
 
 > 範例工程具體使用方式請移步 <b style="color: blue">xy_web_server.git</b> 下列倉庫
 > - <a href="https://github.com/xy-web-service/xy_web_server.git" target="_blank">Github位址</a>  
-> - <a href="https://gitee.com/xy-web-service/xy_web_server.git" target="_blank">Gitee位址</a>
+> - <a href="https://gitee.com/xy-opensource/xy_web_server.git" target="_blank">Gitee位址</a>  
+> - <a href="https://gitcode.com/xy-opensource/xy_web_server.git" target="_blank">GitCode位址</a>  
 
 
 ## 許可證
