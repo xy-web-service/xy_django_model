@@ -2,34 +2,34 @@
  * @Author: 余洋 yuyangit.0515@qq.com
  * @Date: 2024-10-18 13:02:22
  * @LastEditors: 余洋 yuyangit.0515@qq.com
- * @LastEditTime: 2024-10-23 20:52:22
- * @FilePath: /xy_django_model/readme/README_en.md
+ * @LastEditTime: 2024-10-23 20:51:56
+ * @FilePath: /xy_django_model/readme/README.zh-hant.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
 # xy_django_model
 
-- [简体中文](README_zh_CN.md)
-- [繁体中文](README_zh_TW.md)
-- [English](README_en.md)
+- [简体中文](../README.md)
+- [繁體中文](README.zh-hant.md)
+- [English](README.en.md)
 
-## Description
+## 說明
 
-Some tools for Django models.
+Django模型的一些工具.
 
-## Source Code Repositories
+## 程式碼庫
 
-- <a href="https://github.com/xy-web-service/xy_django_model.git" target="_blank">Github</a>  
-- <a href="https://gitee.com/xy-opensource/xy_django_model.git" target="_blank">Gitee</a>  
-- <a href="https://gitcode.com/xy-opensource/xy_django_model.git" target="_blank">GitCode</a>  
+- <a href="https://github.com/xy-web-service/xy_django_model.git" target="_blank">Github位址</a>  
+- <a href="https://gitee.com/xy-opensource/xy_django_model.git" target="_blank">Gitee位址</a>  
+- <a href="https://gitcode.com/xy-opensource/xy_django_model.git" target="_blank">GitCode位址</a>  
 
-## Installation
+## 安裝
 
 ```bash
 # bash
 pip install xy_django_model
 ```
 
-## How to use
+## 使用
 
 ```python
 # models.py
@@ -108,31 +108,30 @@ class MImage(models.Model):
 ```
 
 
-##### Run [Sample Project](../samples/xy_web_server_demo)
+##### 運轉 [範例工程](../samples/xy_web_server_demo)
 
-> After running xy_web_server -w django start
-> Visit http://127.0.0.1:8401/admin/ to verify.（username: root, password: 1)
-> After saving the image, you can find the path where the image exists in the sample project for verification.
+> 執行 xy_web_server -w django start 後
+> 造訪 http://127.0.0.1:8401/admin/ 進行驗證（使用者名稱: root, 密碼: 1)
+> 儲存圖片後可以在範例工程找尋圖片存在路徑進行驗證
 
-> For detailed usage of the sample project, please go to the following repository <b style="color: blue">xy_web_server.git</b> 
-> - <a href="https://github.com/xy-web-service/xy_web_server.git" target="_blank">Github</a>  
-> - <a href="https://gitee.com/xy-opensource/xy_web_server.git" target="_blank">Gitee</a>  
-> - <a href="https://gitcode.com/xy-opensource/xy_web_server.git" target="_blank">GitCode</a>  
-
-
-## License
-xy_django_model is licensed under the <Mulan Permissive Software License，Version 2>. See the [LICENSE](../LICENSE) file for more info.
-
-## Donate
-
-If you think these tools are pretty good, Can you please have a cup of coffee?  
-
-![Pay-Total](./Pay-Total.png)  
+> 範例工程具體使用方式請移步 <b style="color: blue">xy_web_server.git</b> 下列倉庫
+> - <a href="https://github.com/xy-web-service/xy_web_server.git" target="_blank">Github位址</a>  
+> - <a href="https://gitee.com/xy-opensource/xy_web_server.git" target="_blank">Gitee位址</a>  
+> - <a href="https://gitcode.com/xy-opensource/xy_web_server.git" target="_blank">GitCode位址</a>  
 
 
-## Contact
+## 許可證
+xy_django_model 根據 <木蘭寬鬆許可證, 第2版> 獲得許可。有關詳細信息，請參閱 [LICENSE](../LICENSE) 文件。
+
+## 捐贈
+
+如果小夥伴們覺得這些工具還不錯的話，能否請咱喝一杯咖啡呢?  
+
+![Pay-Total](./Pay-Total.png)
+
+## 聯繫方式
 
 ```
-WeChat: yuyangiit
-Mail: yuyangit.0515@qq.com
+微信: yuyangiit
+郵箱: yuyangit.0515@qq.com
 ```
